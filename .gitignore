@@ -4,3 +4,7 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+
+# private and public keys
+*.pub
+client_key
