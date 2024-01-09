@@ -8,3 +8,5 @@
 # private and public keys
 *.pub
 client_key
+
+.terraform.lock.hcl
