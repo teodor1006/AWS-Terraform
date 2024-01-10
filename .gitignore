@@ -10,3 +10,5 @@
 client_key
 
 .terraform.lock.hcl
+
+planfile
