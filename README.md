@@ -1,6 +1,6 @@
 # AWS Terraform Projects
 
-![terraform-aws](terraform-aws.png)
+![terraform-aws](tf-aws.png)
 
 ## Getting Started
 This repository contains various AWS Terraform projects. Each project focuses on different aspects of AWS infrastructure provisioning and management using Terraform.
