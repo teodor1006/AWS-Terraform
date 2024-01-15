@@ -1,0 +1,26 @@
+region = "us-east-1"
+amis = {
+  us-east-1 = "ami-0c7217cdde317cfec" # Ubuntu 22.04 (64-bit)
+  us-east-2 = "ami-0c7217cdde317cfec"
+}
+priv_key_path  = "vprofilekey"
+pub_key_path   = "vprofilekey.pub"
+user           = "ubuntu"
+myIP           = "151.251.16.70/32" # Put your IP in here
+rmquser        = "rabbit"
+rmqpass        = "Gr33n@pple123456"
+dbuser         = "admin"
+dbpass         = "admin123"
+dbname         = "accounts"
+instance_count = "1"
+vpc_name       = "vprofile-VPC"
+zone1          = "us-east-1a"
+zone2          = "us-east-1b"
+zone3          = "us-east-1c"
+vpcCIDR        = "172.21.0.0/16"
+pubSub1CIDR    = "172.21.1.0/24"
+pubSub2CIDR    = "172.21.2.0/24"
+pubSub3CIDR    = "172.21.3.0/24"
+privSub1CIDR   = "172.21.4.0/24"
+privSub2CIDR   = "172.21.5.0/24"
+privSub3CIDR   = "172.21.6.0/24"

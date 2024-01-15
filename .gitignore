@@ -8,7 +8,10 @@
 # private and public keys
 *.pub
 client_key
+vprofilekey
 
 .terraform.lock.hcl
 
 planfile
+
+*.DS_Store

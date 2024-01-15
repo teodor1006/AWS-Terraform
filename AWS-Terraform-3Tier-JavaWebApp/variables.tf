@@ -1,0 +1,25 @@
+variable "region" {}
+variable "amis" {
+  type = map(string)
+}
+variable "priv_key_path" {}
+variable "pub_key_path" {}
+variable "user" {}
+variable "myIP" {}
+variable "rmquser" {}
+variable "rmqpass" {}
+variable "dbuser" {}
+variable "dbpass" {}
+variable "dbname" {}
+variable "instance_count" {}
+variable "vpc_name" {}
+variable "zone1" {}
+variable "zone2" {}
+variable "zone3" {}
+variable "vpcCIDR" {}
+variable "pubSub1CIDR" {}
+variable "pubSub2CIDR" {}
+variable "pubSub3CIDR" {}
+variable "privSub1CIDR" {}
+variable "privSub2CIDR" {}
+variable "privSub3CIDR" {}
