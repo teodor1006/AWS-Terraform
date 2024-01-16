@@ -629,7 +629,7 @@ resource "aws_instance" "vprofile-bastion" {
 
 * We will use userdata script to initialize RDS. We need to get the RDS-Endpoint as an environment variable after it is created and replace it in the script to be able to connect to MySQL Database.
 
-Create `templates` directory in project, under the same directory create a file named as `db-deploy.sh` with below content:
+* Create `templates` directory in project, under the same directory create a file named as `db-deploy.sh` with below content:
 ```sh
 sudo apt update
 sudo apt install git mysql-client -y
@@ -638,7 +638,7 @@ mysql -h ${rds-endpoint} -u ${dbuser} --password=${dbpass} accounts --ssl-mode=D
 mysql -h ${rds-endpoint} -u ${dbuser} --password=${dbpass} accounts --ssl-mode=DISABLED
 ```
 
-Run below commands:
+* Run below commands:
 ```sh
 terraform validate
 terraform fmt
