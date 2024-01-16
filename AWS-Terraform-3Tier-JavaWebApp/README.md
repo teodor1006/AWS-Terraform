@@ -677,6 +677,10 @@ rabbitmq.password=<replace_with_pwd_you_give_in_tf_vars>
 
 ![deploy](images/bean-deploy.png)
 
+* Take a look at the Monitoring Section
+
+![monitoring](images/monitoring.png)
+
 
 ### Step-13: Validate and Clean Up
 
