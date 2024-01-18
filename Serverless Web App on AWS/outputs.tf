@@ -1,3 +1,7 @@
+output "repository_url" {
+  value = aws_codecommit_repository.wild_rides.clone_url_http
+}
+
 output "aws_dynamodb_table_arn" {
   value = aws_dynamodb_table.Wild-Rides-Details-db.arn
 }
