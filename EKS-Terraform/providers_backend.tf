@@ -27,9 +27,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "flaskterrastate"      # Give your S3 Bucket a unique name
+    bucket = "flaskterrastate" # Give your S3 Bucket a unique name
     key    = "terraform.tfstate"
-    region = "us-east-1"            # Change your region if you want
+    region = "us-east-1" # Change your region if you want
   }
 
   required_version = ">= 1.0"

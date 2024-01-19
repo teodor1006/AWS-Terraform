@@ -1,14 +1,14 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "5.1.2"
+  version = "5.5.1"
 
   name = "flask-eks"
 
-  cidr = "172.20.0.0/16"
+  cidr = var.vpcCIDR
   azs  = slice(data.aws_availability_zones.available.names, 0, 3)
 
-  private_subnets = ["172.20.1.0/24", "172.20.2.0/24", "172.20.3.0/24"]
-  public_subnets  = ["172.20.4.0/24", "172.20.5.0/24", "172.20.6.0/24"]
+  private_subnets = [var.privSub1CIDR, var.privSub2CIDR, var.privSub3CIDR]
+  public_subnets  = [var.pubSub1CIDR, var.pubSub2CIDR, var.pubSub3CIDR]
 
   enable_nat_gateway   = true
   single_nat_gateway   = true

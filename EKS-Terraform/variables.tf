@@ -1,11 +1,9 @@
-variable "region" {
-  description = "AWS Region"
-  type        = string
-  default     = "us-east-1"
-}
-
-variable "clusterName" {
-  description = "Name of the EKS cluster"
-  type        = string
-  default     = "cloud-native-cluster"
-}
+variable "region" {}
+variable "clusterName" {}
+variable "vpcCIDR" {}
+variable "pubSub1CIDR" {}
+variable "pubSub2CIDR" {}
+variable "pubSub3CIDR" {}
+variable "privSub1CIDR" {}
+variable "privSub2CIDR" {}
+variable "privSub3CIDR" {}
