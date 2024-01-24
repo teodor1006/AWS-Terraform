@@ -15,7 +15,27 @@
 
 ![repo](images/ecr-repo1.png)
 
-## **Step 3: Provision the files**
+## **Step 3: Create `terraform.tfvars` file** 
+
+* It can look something like that:
+
+```sh
+region       = "us-east-1"
+vpc_name     = "ECS-Fargate-VPC"
+zone1        = "us-east-1a"
+zone2        = "us-east-1b"
+zone3        = "us-east-1c"
+vpcCIDR      = "172.21.0.0/16"
+pubSub1CIDR  = "172.21.1.0/24"
+pubSub2CIDR  = "172.21.2.0/24"
+pubSub3CIDR  = "172.21.3.0/24"
+privSub1CIDR = "172.21.4.0/24"
+privSub2CIDR = "172.21.5.0/24"
+privSub3CIDR = "172.21.6.0/24"
+```
+
+
+## **Step 4: Provision the files**
 * Run the following commands in your terminal:
 
 ```
@@ -25,7 +45,7 @@ terraform validate
 terraform plan
 terraform apply -auto-approve
 ```
-Allow up to 3-4 minutes for the creation process to complete!!!
+* Allow up to 3-4 minutes for the creation process to complete!!!
 
 ![apply](images/apply.png)
 
@@ -33,7 +53,7 @@ Allow up to 3-4 minutes for the creation process to complete!!!
 
 ![ecs-svc](images/ecs-svc.png)
 
-## **Step 4: Delete the files**
+## **Step 5: Delete the files**
 
 * Run the following command:
 
